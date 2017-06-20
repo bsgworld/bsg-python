@@ -18,7 +18,7 @@ For development:
 
 Installation
 ------------
-[Download](archive/master.zip) repository, decompress, install with
+[Download](https://github.com/bsgworld/bsg-python/archive/master.zip) repository, decompress, install with
 `setup.py install`
 
 Usage
