@@ -45,9 +45,9 @@ class Price(Response):
 class Recipient(dict):
     def __init__(self, msisdn: Union[int, str] = None, reference: str = None, **kwargs):
         """
-        :type msisdn: str or int, but len(str(msisdn)) == 12
+        :type msisdn: str or int, but len(str(msisdn)) <= 15
         """
-        if not msisdn or not len(str(msisdn)) == 12:
+        if not msisdn or not len(str(msisdn)) <= 15:
             # raise error without real API request, for error codes see https://bsg.world/developers/rest-api/errors/
             raise APIError(code=41, error_description='Invalid MSISDN')
         if not reference:
