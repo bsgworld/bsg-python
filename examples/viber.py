@@ -15,7 +15,7 @@ def main():
         client = api.ViberAPI(config={'api_key': API_KEY})
         prices = client.get_prices()
         print('Viber Prices (first 5 elements from {}): \n{}'
-              .format(len(prices), pprint.pformat(prices[0:5], indent=4)))
+              .format(len(prices), pprint.pformat(prices[0:5], indent=4).encode('utf-8')))
 
         recipient = api.Recipient(380967000000)
         print('Created recipient: \n{}'.format(pprint.pformat(recipient)))
@@ -28,8 +28,8 @@ def main():
         print('Current Viber status result: \n{}\n'.format(pprint.pformat(status, indent=4)))
 
         client.clear_messages()
-        recipient0 = api.Recipient(380967000000)
-        recipient1 = api.Recipient(380967000001)
+        recipient0 = api.Recipient(380967000001)
+        recipient1 = api.Recipient(380967000002)
         print('Created another one recipients: \n{}'.format(pprint.pformat([recipient0, recipient1])))
         client.add_message(
             api.ViberMessage(
@@ -45,7 +45,7 @@ def main():
 
         result = client.send(
             api.ViberMessage(
-                to=[api.Recipient(380967000000)],
+                to=[api.Recipient(380967000003)],
                 alt_route=dict(originator='BSG', text='sms message text from viber alt_route'),
                 text='viber message text from BSG REST API'))
         result = result['result'][0]

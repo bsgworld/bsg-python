@@ -17,7 +17,7 @@ def main():
         print('Default API endpoint is \'{}\''.format(client.config['api_endpoint']))
 
         # can change global endpoint for all parent request types
-        client.config['api_endpoint'] = 'https://api.bsg.hk/v1.0'
+        client.config['api_endpoint'] = 'https://api.bsg.world/rest'
         print('Alternate API endpoint is \'{}\''.format(client.config['api_endpoint']))
 
         # can use client's certificate

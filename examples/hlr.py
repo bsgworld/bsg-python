@@ -14,8 +14,8 @@ def main():
     try:
         client = api.HLRAPI(config={'api_key': API_KEY})
         prices = client.get_prices()
-        print('HLR Prices (first 5 elements from {}): \n{}'.format(len(prices), pprint.pformat(prices[0:5], indent=4)))
-        lookup_list = api.HLRL(380970000000)
+        print('HLR Prices (first 5 elements from {}): \n{}'.format(len(prices), pprint.pformat(prices[0:5], indent=4).encode('utf-8')))
+        lookup_list = api.HLRL(380633119801)
         print('Created HLR request: \n{}'.format(pprint.pformat(lookup_list, indent=4)))
         result = client.send(lookup_list)
         result_id = result['result'][0]['id']

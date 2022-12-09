@@ -14,7 +14,7 @@ def main():
     try:
         client = api.SMSAPI(config={'api_key': API_KEY})
         prices = client.get_prices()
-        print('SMS Prices (first 5 elements from {}): \n{}'.format(len(prices), pprint.pformat(prices[0:5], indent=4)))
+        print('SMS Prices (first 5 elements from {}): \n{}'.format(len(prices), pprint.pformat(prices[0:5], indent=4).encode('utf-8')))
 
         recipient = api.Recipient(380967000000)
         print('Created recipient: \n{}'.format(pprint.pformat(recipient)))

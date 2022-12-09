@@ -62,7 +62,7 @@ class Requester:
 
     def __init__(self, config: dict = None):
         """Constructor for Requester"""
-        self.config = {'api_endpoint': config.get('api_endpoint', 'https://app.bsg.hk/rest'),
+        self.config = {'api_endpoint': config.get('api_endpoint', 'https://api.bsg.world/rest'),
                        'api_key': config.get('api_key')}
         self.headers = {}
 
