@@ -21,6 +21,15 @@ Installation
 [Download](https://github.com/bsgworld/bsg-python/archive/master.zip) repository, decompress, install with
 `setup.py install`
 
+Alternatively, use pip:
+
+    pip install git+https://github.com/bsgworld/bsg-python.git
+
+or [Poetry](https://python-poetry.org/) to add a requirement:
+
+    poetry add git+https://github.com/bsgworld/bsg-python.git
+
+
 Usage
 -----
 See [BSG REST API Documentation](https://bsg.world/developers/rest-api/) for complete list of API clients, error codes, result codes etc.
