@@ -1,9 +1,7 @@
-from distutils.core import setup
-from bsg_restapi import __version__
+from setuptools import setup
 
 setup(
     name='bsg-restapi',
-    version=__version__,
     packages=['bsg_restapi'],
     url='https://github.com/bsgworld/bsg-python',
     license='BSD 2-Clause License',
