@@ -1,15 +1,15 @@
-Free BSG REST SMS API Wrapper for Python
+# BSG REST API. Free SMS API - Python
 ================================
 
-This repository contains the open source Python client for BSG REST API.
+This repository contains the open source Python client for BSG REST API. 
 
 
-Requirements
+## Requirements
 ------------
 
 For access to BSG API:
-- [Sign up](https://app.bsg.world/auth/signup) for a free account
-- Get live `api_key`[here](https://app.bsg.world/integration/remote)
+- [Sign up][https://app.bsg.world/auth/signup?](https://app.bsg.world/auth/signup?utm_source=github&utm_medium=referral&utm_campaign=python) for a free account
+- Get live `api_key`[here](https://app.bsg.world/integration/remote?utm_source=github&utm_medium=referral&utm_campaign=python)
 - Python 3.2+, [requests](https://pypi.python.org/pypi/requests)
 
 For development:
