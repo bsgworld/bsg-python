@@ -1,4 +1,4 @@
-BSG REST API Wrapper for Python
+Free BSG REST SMS API Wrapper for Python
 ================================
 
 This repository contains the open source Python client for BSG REST API.
