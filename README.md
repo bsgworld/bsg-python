@@ -8,8 +8,8 @@ Requirements
 ------------
 
 For access to BSG API:
-- [Sign up](https://bsg.world) for a free account
-- Get `api_key`
+- [Sign up](https://app.bsg.world/auth/signup) for a free account
+- Get live `api_key`[here](https://app.bsg.world/integration/remote)
 - Python 3.2+, [requests](https://pypi.python.org/pypi/requests)
 
 For development:
