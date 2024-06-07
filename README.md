@@ -1,5 +1,4 @@
 # BSG REST API. Free SMS API - Python
-================================
 
 This repository contains the open source Python client for BSG REST API. 
 The API allows you to send bulk **SMS campaigns**, single **transactional SMS**, **Viber** messages, and check phone numbers via **HLR requests**. 
@@ -10,7 +9,6 @@ The API usage is free. You only pay for the messages sent.
 Prices for sending messages can be found here: [Prices](https://bsg.world/pricing-sms/?utm_source=github&utm_medium=referral&utm_campaign=python)
 
 ## Requirements
-------------
 
 For access to BSG API:
 - [Sign up](https://app.bsg.world/auth/signup?utm_source=github&utm_medium=referral&utm_campaign=python) for a free account
